@@ -166,7 +166,7 @@
   /* ── SKILLS ── */
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(180px, 100%), 1fr));
     gap: 1rem;
   }
   .skill-chip {
@@ -190,7 +190,7 @@
   /* ── PROJECTS ── */
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
     gap: 1.5rem;
   }
   .project-card {
@@ -264,32 +264,6 @@
   .tl-content .role {
     font-size: 0.83rem; color: var(--green);
     font-weight: 500; margin-bottom: 0;
-  }
-
-  /* ── EDUCATION ── */
-  .edu-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.2rem;
-  }
-  .edu-card {
-    border: 1px solid var(--rule);
-    border-radius: 2px;
-    padding: 1.6rem;
-  }
-  .edu-degree {
-    font-family: 'Syne', sans-serif;
-    font-weight: 700; font-size: 0.95rem;
-    margin-bottom: 0.3rem;
-  }
-  .edu-school { font-size: 0.85rem; color: var(--muted); }
-  .edu-year {
-    display: inline-block;
-    margin-top: 0.8rem;
-    font-size: 0.72rem; font-weight: 600;
-    letter-spacing: 0.08em; text-transform: uppercase;
-    color: var(--green);
-    background: var(--green-lt);
-    padding: 0.2rem 0.5rem; border-radius: 1px;
   }
 
   /* ── CONTACT ── */
@@ -424,16 +398,16 @@
     </div>
 
     <div class="project-card">
-      <span class="project-tag">Next.js · Corporate</span>
+      <span class="project-tag">Corporate · Web</span>
       <h3>Tobams Group — Training &amp; Development</h3>
       <p>Pixel-fidelity rebuild of a corporate training and consultancy page, built with Next.js (App Router) and Tailwind CSS — fully responsive, semantic markup, and component-driven.</p>
       <a href="https://tobamassessment.vercel.app/" target="_blank" class="project-link">Visit live project →</a>
     </div>
 
     <div class="project-card">
-      <span class="project-tag">React · Node.js</span>
+      <span class="project-tag">Full-Stack · Payments</span>
       <h3>EventHub — Event Ticketing Platform</h3>
-      <p>Full-stack event ticketing app: browse events, pay via Paystack, and get a QR-coded ticket; organizers manage events and sales, and staff check attendees in with a live QR scanner.</p>
+      <p>Full-stack event ticketing app built with React and Node.js: browse events, pay via Paystack, and get a QR-coded ticket; organizers manage events and sales, and staff check attendees in with a live QR scanner.</p>
       <a href="https://event-ticketing-app-sable.vercel.app/" target="_blank" class="project-link">Visit live project →</a>
     </div>
 
@@ -510,25 +484,6 @@
         <h3>Grace Heritage Academy</h3>
         <p class="role">ICT Instructor</p>
       </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education">
-  <p class="section-label">Academic background</p>
-  <h2 class="section-title">Education</h2>
-  <div class="edu-grid">
-    <div class="edu-card">
-      <div class="edu-degree">HND — Computer Science</div>
-      <div class="edu-school">The Federal Polytechnic Offa, Kwara State</div>
-      <span class="edu-year">2017</span>
-    </div>
-    <div class="edu-card">
-      <div class="edu-degree">OND — Computer Science</div>
-      <div class="edu-school">The Federal Polytechnic Offa, Kwara State</div>
-      <span class="edu-year">2012</span>
     </div>
 
   </div>
