@@ -38,17 +38,12 @@
     border-bottom: 1px solid var(--rule);
   }
   .nav-logo {
-    font-family: 'Syne', sans-serif;
-    font-weight: 800; font-size: 1rem;
-    letter-spacing: 0.01em; color: var(--ink);
-    text-decoration: none; line-height: 1.3;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-weight: 600; font-size: 1.05rem;
+    letter-spacing: -0.01em; color: var(--ink);
+    text-decoration: none;
   }
-  .nav-logo span {
-    display: block;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500; font-size: 0.68rem;
-    letter-spacing: 0.02em; color: var(--green);
-  }
+  .nav-logo .brk { color: var(--green); }
   .nav-links { display: flex; gap: 2rem; list-style: none; }
   .nav-links a {
     font-size: 0.85rem; font-weight: 500; letter-spacing: 0.04em;
@@ -356,7 +351,7 @@
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#">Oguntimehin<span>blessedoluwaseun.dev</span></a>
+  <a class="nav-logo" href="#"><span class="brk">&lt;</span>Oluwaseun<span class="brk"> /&gt;</span></a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
