@@ -282,6 +282,39 @@
     font-weight: 500; margin-bottom: 0;
   }
 
+  /* ── EDUCATION & CERTIFICATIONS ── */
+  .edu-cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    max-width: 900px;
+  }
+  .edu-col-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.95rem; font-weight: 700;
+    color: var(--green);
+    text-transform: uppercase; letter-spacing: 0.08em;
+    margin-bottom: 1.2rem;
+  }
+  .edu-item {
+    border-left: 2px solid var(--rule);
+    padding: 0 0 1.4rem 1.2rem;
+  }
+  .edu-item:last-child { padding-bottom: 0; }
+  .edu-degree {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700; font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+  }
+  .edu-school {
+    font-size: 0.85rem; color: var(--muted);
+    margin-bottom: 0.2rem;
+  }
+  .edu-year {
+    font-size: 0.78rem; color: var(--green);
+    font-weight: 500;
+  }
+
   /* ── CONTACT ── */
   .contact-inner {
     max-width: 640px;
@@ -356,6 +389,7 @@
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
@@ -411,6 +445,17 @@
     <div class="skill-chip"><span class="skill-dot"></span>Database Administration</div>
     <div class="skill-chip"><span class="skill-dot"></span>IT Support &amp; Troubleshooting</div>
     <div class="skill-chip"><span class="skill-dot"></span>Motion Graphics Design</div>
+    <div class="skill-chip"><span class="skill-dot"></span>SQL</div>
+    <div class="skill-chip"><span class="skill-dot"></span>React</div>
+    <div class="skill-chip"><span class="skill-dot"></span>PostgreSQL</div>
+    <div class="skill-chip"><span class="skill-dot"></span>MongoDB Atlas</div>
+    <div class="skill-chip"><span class="skill-dot"></span>Role-Based Access Control</div>
+    <div class="skill-chip"><span class="skill-dot"></span>PWAs &amp; Offline-First</div>
+    <div class="skill-chip"><span class="skill-dot"></span>Linux VPS &amp; DNS</div>
+    <div class="skill-chip"><span class="skill-dot"></span>Claude API Integration</div>
+    <div class="skill-chip"><span class="skill-dot"></span>Web Speech API</div>
+    <div class="skill-chip"><span class="skill-dot"></span>QR Code Systems</div>
+    <div class="skill-chip"><span class="skill-dot"></span>System Design</div>
   </div>
 </section>
 
@@ -463,10 +508,17 @@
     </div>
 
     <div class="project-card">
-      <span class="project-tag">Business · Web</span>
+      <span class="project-tag">Business &amp; EdTech · Web</span>
       <h3>Cleaning Service Website</h3>
-      <p>A modern, fully responsive business website for a professional cleaning service company — designed for trust and clarity.</p>
+      <p>A modern, fully responsive business website for a professional cleaning service company, alongside a bundled EdTech suite built with React: a voice AI tutor, an LMS with quizzes and progress tracking, a multi-role CBT exam portal, and an offline-first installable school accounts app.</p>
       <a href="https://petfunprofessionalservices.vercel.app/" target="_blank" class="project-link">Visit live project →</a>
+    </div>
+
+    <div class="project-card">
+      <span class="project-tag">Automation · Google Apps Script</span>
+      <h3>QR Staff Attendance System</h3>
+      <p>Dual-shift QR attendance system built on Google Apps Script and Google Sheets, with PIN verification, device session locking, shift-time enforcement, and Admin / Super Admin roles.</p>
+      <a href="https://vmc-attendance.vercel.app/" target="_blank" class="project-link">Visit live project →</a>
     </div>
 
   </div>
@@ -526,6 +578,45 @@
   </div>
 </section>
 
+<!-- EDUCATION & CERTIFICATIONS -->
+<section id="education">
+  <p class="section-label">Academic &amp; credentials</p>
+  <h2 class="section-title">Education &amp; Certifications</h2>
+  <div class="edu-cert-grid">
+    <div>
+      <h3 class="edu-col-title">Education</h3>
+      <div class="edu-item">
+        <div class="edu-degree">HND, Computer Science</div>
+        <div class="edu-school">The Federal Polytechnic Offa, Kwara State</div>
+        <div class="edu-year">2017</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-degree">OND, Computer Science</div>
+        <div class="edu-school">The Federal Polytechnic Offa, Kwara State</div>
+        <div class="edu-year">2012</div>
+      </div>
+    </div>
+    <div>
+      <h3 class="edu-col-title">Certifications</h3>
+      <div class="edu-item">
+        <div class="edu-degree">Software Development</div>
+        <div class="edu-school">3MTT — NITDA / Federal Ministry of Communications, Innovation &amp; Digital Economy</div>
+        <div class="edu-year">Jun 2026 · Verify: FE/26/9156282761</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-degree">Backend Development</div>
+        <div class="edu-school">TechCrush 15-Week Bootcamp (ACTD-accredited, USA)</div>
+        <div class="edu-year">Jun 2026 · ID: TEC-189D7F75</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-degree">Frontend Development</div>
+        <div class="edu-school">TechCrush 15-Week Bootcamp (ACTD-accredited, USA)</div>
+        <div class="edu-year">Jan 2026 · ID: TEC-F9F1E4FF</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact">
   <p class="section-label">Let's connect</p>
@@ -542,6 +633,14 @@
       <div class="contact-item">
         <label>Phone</label>
         <span>08039524688 / 08055274875</span>
+      </div>
+      <div class="contact-item">
+        <label>Languages</label>
+        <span>English (Fluent) · Yoruba (Native)</span>
+      </div>
+      <div class="contact-item">
+        <label>Online</label>
+        <span><a href="https://github.com/seun247" target="_blank">github.com/seun247</a> · <a href="https://linkedin.com/in/seun247" target="_blank">linkedin.com/in/seun247</a></span>
       </div>
       <div class="contact-item" style="grid-column: 1 / -1;">
         <label>Location</label>
